@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0372C689199AFF5200DD3E9E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0372C688199AFF5200DD3E9E /* main.cpp */; };
 		0372C68B199AFF5200DD3E9E /* StrategyDesignPattern.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0372C68A199AFF5200DD3E9E /* StrategyDesignPattern.1 */; };
+		0372C6A3199AFF7000DD3E9E /* ICanFly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0372C693199AFF7000DD3E9E /* ICanFly.cpp */; };
+		0372C6A4199AFF7000DD3E9E /* IDontFly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0372C695199AFF7000DD3E9E /* IDontFly.cpp */; };
+		0372C6A5199AFF7000DD3E9E /* ICanQuack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0372C698199AFF7000DD3E9E /* ICanQuack.cpp */; };
+		0372C6A6199AFF7000DD3E9E /* IDontQuack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0372C69A199AFF7000DD3E9E /* IDontQuack.cpp */; };
+		0372C6A7199AFF7000DD3E9E /* DuckClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0372C69C199AFF7000DD3E9E /* DuckClass.cpp */; };
+		0372C6A8199AFF7000DD3E9E /* MallardDuckClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0372C6A1199AFF7000DD3E9E /* MallardDuckClass.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +34,20 @@
 		0372C685199AFF5200DD3E9E /* StrategyDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StrategyDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		0372C688199AFF5200DD3E9E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0372C68A199AFF5200DD3E9E /* StrategyDesignPattern.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = StrategyDesignPattern.1; sourceTree = "<group>"; };
+		0372C693199AFF7000DD3E9E /* ICanFly.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ICanFly.cpp; sourceTree = "<group>"; };
+		0372C694199AFF7000DD3E9E /* ICanFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICanFly.h; sourceTree = "<group>"; };
+		0372C695199AFF7000DD3E9E /* IDontFly.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IDontFly.cpp; sourceTree = "<group>"; };
+		0372C696199AFF7000DD3E9E /* IDontFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDontFly.h; sourceTree = "<group>"; };
+		0372C698199AFF7000DD3E9E /* ICanQuack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ICanQuack.cpp; sourceTree = "<group>"; };
+		0372C699199AFF7000DD3E9E /* ICanQuack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICanQuack.h; sourceTree = "<group>"; };
+		0372C69A199AFF7000DD3E9E /* IDontQuack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IDontQuack.cpp; sourceTree = "<group>"; };
+		0372C69B199AFF7000DD3E9E /* IDontQuack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDontQuack.h; sourceTree = "<group>"; };
+		0372C69C199AFF7000DD3E9E /* DuckClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DuckClass.cpp; sourceTree = "<group>"; };
+		0372C69D199AFF7000DD3E9E /* DuckClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuckClass.h; sourceTree = "<group>"; };
+		0372C69F199AFF7000DD3E9E /* FlyBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlyBehavior.h; sourceTree = "<group>"; };
+		0372C6A0199AFF7000DD3E9E /* QuackBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuackBehavior.h; sourceTree = "<group>"; };
+		0372C6A1199AFF7000DD3E9E /* MallardDuckClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MallardDuckClass.cpp; sourceTree = "<group>"; };
+		0372C6A2199AFF7000DD3E9E /* MallardDuckClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallardDuckClass.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +80,56 @@
 		0372C687199AFF5200DD3E9E /* StrategyDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				0372C691199AFF7000DD3E9E /* Behaviors */,
+				0372C69C199AFF7000DD3E9E /* DuckClass.cpp */,
+				0372C69D199AFF7000DD3E9E /* DuckClass.h */,
+				0372C69E199AFF7000DD3E9E /* Interface */,
+				0372C6A1199AFF7000DD3E9E /* MallardDuckClass.cpp */,
+				0372C6A2199AFF7000DD3E9E /* MallardDuckClass.h */,
 				0372C688199AFF5200DD3E9E /* main.cpp */,
 				0372C68A199AFF5200DD3E9E /* StrategyDesignPattern.1 */,
 			);
 			path = StrategyDesignPattern;
+			sourceTree = "<group>";
+		};
+		0372C691199AFF7000DD3E9E /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				0372C692199AFF7000DD3E9E /* FlyBehavior */,
+				0372C697199AFF7000DD3E9E /* QuackBehavior */,
+			);
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		0372C692199AFF7000DD3E9E /* FlyBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				0372C693199AFF7000DD3E9E /* ICanFly.cpp */,
+				0372C694199AFF7000DD3E9E /* ICanFly.h */,
+				0372C695199AFF7000DD3E9E /* IDontFly.cpp */,
+				0372C696199AFF7000DD3E9E /* IDontFly.h */,
+			);
+			path = FlyBehavior;
+			sourceTree = "<group>";
+		};
+		0372C697199AFF7000DD3E9E /* QuackBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				0372C698199AFF7000DD3E9E /* ICanQuack.cpp */,
+				0372C699199AFF7000DD3E9E /* ICanQuack.h */,
+				0372C69A199AFF7000DD3E9E /* IDontQuack.cpp */,
+				0372C69B199AFF7000DD3E9E /* IDontQuack.h */,
+			);
+			path = QuackBehavior;
+			sourceTree = "<group>";
+		};
+		0372C69E199AFF7000DD3E9E /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				0372C69F199AFF7000DD3E9E /* FlyBehavior.h */,
+				0372C6A0199AFF7000DD3E9E /* QuackBehavior.h */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0372C6A3199AFF7000DD3E9E /* ICanFly.cpp in Sources */,
+				0372C6A8199AFF7000DD3E9E /* MallardDuckClass.cpp in Sources */,
+				0372C6A7199AFF7000DD3E9E /* DuckClass.cpp in Sources */,
 				0372C689199AFF5200DD3E9E /* main.cpp in Sources */,
+				0372C6A5199AFF7000DD3E9E /* ICanQuack.cpp in Sources */,
+				0372C6A6199AFF7000DD3E9E /* IDontQuack.cpp in Sources */,
+				0372C6A4199AFF7000DD3E9E /* IDontFly.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
